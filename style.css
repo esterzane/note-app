@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.gafata-regular {
+    font-family: "Gafata", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    height: 100%;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+}
+
+video {
+    position: fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    opacity: 0.25;
+    z-index: -1;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+
+.note-app-container {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
+    margin: 70%;
+    color: #1e1d32;
+}
+
+.note-app-container h1 {
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.note-app-container img {
+    width: 60px;
+    padding-right: 10px;
+    background: #d0b0eb;
+    border-radius: 20%;
+    padding: 10px 10px;
+    margin-right: 5px;
+    
+}
+
+.note-app-container button img {
+    width: 45px;
+    background: none;
+}
+
+.note-app-container button{
+    display: flex;
+    align-items: center;
+    color: #d0b0eb; 
+    font-size: 16px;
+    border-radius:25px;
+    border-color: #431869;
+    padding: 10px 20px;
+    margin: 15px 0 10px;
+    outline: 0;
+    cursor: pointer;
+}
