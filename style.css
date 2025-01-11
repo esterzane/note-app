@@ -19,20 +19,22 @@ body {
     
 }
 
-video {
-    position: fixed;
-    top:0;
-    right:0;
-    bottom:0;
-    left:0;
-    opacity: 0.25;
-    z-index: -1;
+.background-img {
     min-width: 100%;
     min-height: 100%;
-    object-fit: cover;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    background-image: url('assets/background image.jpg');
+    background-size: cover;
+    background-attachment: fixed; 
+    background-position: center; 
+    background-repeat: repeat; 
+    opacity: 0.45; 
+    z-index: -1;
     pointer-events: none;
+    
 }
-
 
 .note-app-container {
     width: 100%;
