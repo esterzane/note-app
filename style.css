@@ -31,9 +31,8 @@ body {
     background-position: center; 
     background-repeat: repeat; 
     opacity: 0.45; 
-    z-index: -1;
     pointer-events: none;
-    
+    z-index: -1;
 }
 
 .note-app-container {
@@ -41,7 +40,7 @@ body {
     min-height: 100vh;
     position: relative;
     z-index: 1;
-    margin: 70%;
+    padding: 50px;
     color: #1e1d32;
 }
 
@@ -55,7 +54,6 @@ body {
 .note-app-container img {
     width: 60px;
     padding-right: 10px;
-    background: #d0b0eb;
     border-radius: 20%;
     padding: 10px 10px;
     margin-right: 5px;
@@ -64,18 +62,38 @@ body {
 
 .note-app-container button img {
     width: 45px;
-    background: none;
 }
 
 .note-app-container button{
     display: flex;
     align-items: center;
-    color: #d0b0eb; 
+    color: #460c30; 
     font-size: 16px;
     border-radius:25px;
-    border-color: #431869;
+    border-color: #2aa1ce;
     padding: 10px 20px;
     margin: 15px 0 10px;
     outline: 0;
     cursor: pointer;
+}
+
+.input-box {
+    width: 100%;
+    max-width: 500px;
+    min-height: 150px;
+    background: linear-gradient(to bottom, #ad93a2, #460c30);
+    color: #333;
+    padding: 20px;
+    margin: auto; 
+    outline: none;
+    border-radius: 5px;
+}
+
+.input-box img { 
+    width: 25px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+    z-index: 10;
 }
