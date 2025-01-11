@@ -31,51 +31,73 @@ body {
     background-position: center; 
     background-repeat: repeat; 
     opacity: 0.45; 
-    z-index: -1;
     pointer-events: none;
-    
+    z-index: -1;
 }
 
-.note-app-container {
+.container {
     width: 100%;
     min-height: 100vh;
     position: relative;
     z-index: 1;
-    margin: 70%;
+    padding: 50px;
     color: #1e1d32;
 }
 
-.note-app-container h1 {
+.container h1 {
     display: flex;
     align-items: center;
     font-size: 50px;
     font-weight: 900;
 }
 
-.note-app-container img {
+.container img {
     width: 60px;
     padding-right: 10px;
-    background: #d0b0eb;
     border-radius: 20%;
     padding: 10px 10px;
     margin-right: 5px;
+    z-index: 1;
     
 }
 
-.note-app-container button img {
+.container button img {
     width: 45px;
-    background: none;
 }
 
-.note-app-container button{
+.container button {
     display: flex;
     align-items: center;
-    color: #d0b0eb; 
+    color: #460c30; 
     font-size: 16px;
     border-radius:25px;
-    border-color: #431869;
+    border-color: #2aa1ce;
     padding: 10px 20px;
     margin: 15px 0 10px;
     outline: 0;
+    cursor: pointer;
+}
+
+.input-box {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    max-width: 800px;
+    min-height: 150px;
+    background: linear-gradient(to bottom, #ad93a2, #460c30);
+    color: #333;
+    padding: 20px;
+    margin: 30px 10px; 
+    outline: none;
+    border-radius: 5px;
+    size: 30px;
+}
+
+.delete-icon {
+    position: relative;
+    width: 15px;
+    height: auto;
+    bottom: 10px;
+    right: 15px;
     cursor: pointer;
 }
