@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 .gafata-regular {
@@ -38,8 +37,6 @@ body {
 .container {
     width: 100%;
     min-height: 100vh;
-    position: relative;
-    z-index: 1;
     padding: 50px;
     color: #1e1d32;
 }
@@ -51,7 +48,7 @@ body {
     font-weight: 900;
 }
 
-.container img {
+.container h1 img {
     width: 60px;
     padding-right: 10px;
     border-radius: 20%;
@@ -62,7 +59,8 @@ body {
 }
 
 .container button img {
-    width: 45px;
+    width: 40px;
+    margin-right: 8px;
 }
 
 .container button {
@@ -79,12 +77,11 @@ body {
 }
 
 .input-box {
-    display: flex;
-    position: absolute;
+    position: relative;
     width: 100%;
     max-width: 800px;
     min-height: 150px;
-    background: linear-gradient(to bottom, #ad93a2, #460c30);
+    background: #2aa2ce81;
     color: #333;
     padding: 20px;
     margin: 30px 10px; 
@@ -93,10 +90,9 @@ body {
     size: 30px;
 }
 
-.delete-icon {
-    position: relative;
-    width: 15px;
-    height: auto;
+.input-box img {
+    width: 25px;
+    position: absolute;
     bottom: 10px;
     right: 15px;
     cursor: pointer;
