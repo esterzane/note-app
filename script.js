@@ -7,13 +7,11 @@ const showNotes = () => {
 }
 showNotes(); 
 
-console.log(showNotes)
 
 const updateStorage = () => {
     localStorage.setItem("notes", notesContainer.innerHTML);
 }
 
-console.log(updateStorage)
 
 createBtn.addEventListener("click", ()=> {
     let inputBox = document.createElement("p");
@@ -21,11 +19,10 @@ createBtn.addEventListener("click", ()=> {
     inputBox.className="input-box";
     inputBox.setAttribute("contenteditable", "true");
     img.src="assets/trash.234x256.png";
-    notesContainer.appendChild(inputBox).appendChild(img);
+    inputBox.appendChild(img);
+    notesContainer.appendChild(inputBox);
 
 })
-
-
 
 notesContainer.addEventListener("click", (e) => {
     if (e.target.tagName === "IMG") {
@@ -33,12 +30,19 @@ notesContainer.addEventListener("click", (e) => {
         updateStorage();
     } 
     else if (e.target.tagName === "P") {
-        notes = document.querySelectorAll(".input-box");
+        const notes = document.querySelectorAll(".input-box");
         notes.forEach(nt => {
-            nt.onkeyup =  () => {
+            nt.onkeyup = () => {
                 updateStorage();
             }
         })
     }
+
+    document.addEventListener("keydown", event => {
+        if (event.key === "Enter") {
+            document.execCommand("insertLineBreak");
+            event.preventDefault();
+        }
+    });
 
 }); 
